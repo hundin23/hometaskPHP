@@ -4,8 +4,8 @@
 
     <script type="text/javascript">
 
-        var = a;
-        var = b;
+        var a = prompt("Введите число");
+        var b = prompt("Введите число");
         var = result;
 
 
@@ -29,9 +29,25 @@
 
 
       </script>
-
+      <link href="kalkulator.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
       </head>
       <body>
-
+        <div class="container">
+           <form action="#" method="post">
+             <div class="text">
+               <input type="text" id="result" name="result">
+              </div>
+           <div class="сalkulatore">
+                <button class="minus" type="button">Минус</button>
+                <button class="plus" type="button">Плюс</button>
+                <button class="multiply" type="button">Умножить</button>
+                <button class="divided" type="button">Поделить</button>
+                <button class="percent" type="button">Деление по модулю</button>
+                <button class="squre" type="button">Квадрат</button>
+        </div>
+             <button class="btn">Найти</button>
+           </form>
+        </div>
       </body>
       </html>
