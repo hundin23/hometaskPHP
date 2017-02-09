@@ -16,20 +16,26 @@ body {
   background-position: center;
 }
 
-.сalkulatore  button {
+.сalkulator button {
   display: inline-block;
   vertical-align: top;
-  width: 100px;
-  height:100px;
+  width: 50px;
+  height:50px;
   margin: 15px;
   background-color: red;
 
 }
 
+button .zero {
+  display: block;
+  margin-left: 100px;
+}
+
 .btn {
   display: block;
-  width:50%;
-  height:100px;
+  width:25%;
+  height:50px;
   background-position: center;
   background-color: green;
+  margin-top: 10px;
 }
