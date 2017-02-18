@@ -7,28 +7,42 @@
 
     <script type="text/javascript">
 
-        var a = prompt("Введите число");
-        var b = prompt("Введите число");
+        var a = prompt("Введите первое число");
+        var sigh = prompt("Введите знак арифметической операции: + - * / % ^");
+        var b = prompt("Введите второе число");
         var = result;
 
+        swithc (sigh)
 
+        case 1: +
         result = a + b;
         document.write("a + b = " + result + "<br />");
+        break;
 
+        case 2: -
         result = a - b; //
         document.write("a - b = " + result + "<br />");
+        break;
 
+        case 3: *
         result = a * b;
         document.write("a - b = " + result + "<br />");
+        break;
 
+        case 4: /
         result = a / b;
         document.write("a / b = " + result + "<br />");
+        break;
 
+        case 5: %
         result = a % b;
         document.write("a % b = " + result + "<br />");
+        break;
 
+        case 6: ^
         result = a ^ b;
         document.write("a ^ b = " + result + "<br />");
+        break;
 
 
         </script>
