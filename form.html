@@ -105,39 +105,34 @@
                 var fio = document.getElementsByName('data1');
                 var tel = document.getElementsByName('data2');
                 var mail = document.getElementsByName('data3');
+                var bth = document.getElementsById('button');
                 var pattern1 = /[а-яА-Я]+ [а-яА-Я]+ [а-яА-Я]+/;
                 var pattern2 = /\+38 \(\d{3}\) \d{2}-\d{2}-\d{3}/
                 var pattern3 = /\b[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}\b/i;
 
-                if (pattern1.test(fio)) {
-                    var xhr = new XMLHttpRequest();
-                    xhr.open("POST", "/url");
-                    xhr.send(fio);
+                bth.addEventListener("click", function(event) {
 
-                 else {
-                    var el = document.getElementsByTagName('input');
-                    el.classList.add('error');
+                do () {
+                  var xhr = new XMLHttpRequest();
+                  xhr.open("POST", "/url"); }
+
+                if (pattern1.test(fio)) {
+                    xhr.send(fio);
                 }
 
                 if (pattern2.test(tel)) {
-                    var xhr = new XMLHttpRequest();
-                    xhr.open("POST", "/url");
                     xhr.send(tel);
-
-                 else {
-                  var el = document.getElementsByTagName('input');
-                    el.classList.add('error');
                 }
 
                 if (pattern3.test(mail)) {
-                  var xhr = new XMLHttpRequest();
-                  xhr.open("POST", "/url");
                   xhr.send(mail);
+                }  
 
                 else {
                   var el = document.getElementsByTagName('input');
                   el.classList.add('error');
-                }
+
+                } }
     </script>
 </body>
 

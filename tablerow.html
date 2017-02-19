@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Персональные данные</title>
+    <style media="screen">
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+            background-color: #f2f2f2;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: "PT Sans", Arial, sans-serif;
+            line-height: 21px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+            padding-right: 10px;
+            border: 3px solid pink;
+        }
+
+        th {
+            padding: 10px;
+            border: 3px solid pink;
+        }
+
+        caption {
+            margin: 20px;
+            font-size: 22px;
+            color: pink;
+            font-weight: bold;
+        }
+
+        .data {
+          background-color: #81b3d2;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+
+<table>
+        <caption>Персональные данные</caption>
+        <tr class="data">
+            <th >Имя</th>
+            <th >Фамилия</th>
+            <th >Возраст</th>
+            <th >Язык программирование</th>
+        </tr>
+        </tr>
+        <tr class="row">
+            <td id="name"></td>
+            <td id="sname"></td>
+            <td id="age"></td>
+            <td id="language"></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+
+    var name = document.getElementsById('name');
+    var sname = document.getElementsById('sname');
+    var age = document.getElementsById('age');
+    var language = document.getElementsById('language');
+    var arr = [1, 2, 3, 4];
+    var newArr = document.getElementsByName('row');
+
+    function ask()
+
+    {
+    name = prompt("Введите свое имя:");
+    sname = prompt("Введите свою фамилию:");
+    age = prompt("Введите свой возраст:");
+    language = prompt("Введите языки программирования, которые знаете:");
+    }
+
+     function do () {
+      arr[0] = name;
+      arr[1] = sname;
+      arr[2] = age;
+      arr[3] = language;
+
+      if (arr == true ) {
+
+        newArr [arr.lenght] = 3;
+        document.write("Имя: " + name + "<br />");
+        document.write("Фамилия: " + sname + "<br />");
+        document.write("Возраст: " + age + "<br />");
+        document.write("Язык программирования: " + language + "<br />"); }
+
+      do {
+        ask();
+        say();
+        repeater = confirm("Пройти заполнение еще раз?");
+
+      } while (repeater);
+
+    </script>
+</body>
+
+</html>
